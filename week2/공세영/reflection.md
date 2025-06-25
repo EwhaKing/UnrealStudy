@@ -210,19 +210,34 @@ Execution wire 이어주는 것을 잊지 말 것.
 
 
 
-2025.06.03(화) Chapter 33-40까지 진행
+2025.06.19(수) Chapter 33-45까지 진행
 
 
-33. 순수 함수
+33. 순수 함수(Pure Function)
+
+사이드 이펙트가 없는 함수를 순수 함수라고 한다. 리턴 값만 있는 계산만을 위한 함수. 차갑다.
+e.g. Get Ammo, Get Actor Forward Vector, Multiply, Minus, Greater 등...
+순수 함수는 Execution Pin이 없어도 된다고 한다. 그렇네....
+그래서 이름 지을 때 동사로 시작하지 않음(헐!!!!!!)
+
+그럼 Side Effect가 뭔데? 가시적인 효과(Observable Effect)가 있는 함수란다.
+e.g. Print String, Add Impulse 등....
 
 
 
-34. 멤버 함수
+34. 멤버 함수(Member Function)
+
+레벨 블루 프린트가 아닌 클래스 내부에 있는 함수들. 특정 인스턴스에서 호출됨.
+OOP 개념. "Functions live with the data they manipulate"
+= 현재 타겟 또는 현재 인스턴스 파라미터를 input으로 가짐
 
 
 
 35. 레벨 로드와 지연 노드
 
+Open Level을 통해 다른 레벨로 진입할 수 있다.
+Delay를 이용하면 지정된 시간 이후 다음 블루프린트 노드로 진입.
+이 둘을 복합적으로 이용하면 현재 레벨(self)를 다시 불러올 수 있다.
 
 
 36. 마무리 요약
